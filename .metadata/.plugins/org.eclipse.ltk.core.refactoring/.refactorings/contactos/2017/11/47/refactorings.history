@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;GuiContactos.java&apos; to &apos;contactos/src/edu.vista&apos;&#x0D;&#x0A;- Original project: &apos;contactos&apos;&#x0D;&#x0A;- Destination element: &apos;contactos/src/edu.vista&apos;&#x0D;&#x0A;- Original element: &apos;edu.logica.GuiContactos.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;edu.vista" element1="/src&lt;edu.logica{GuiContactos.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1510850037415" units="1" version="1.0"/>
+</session>

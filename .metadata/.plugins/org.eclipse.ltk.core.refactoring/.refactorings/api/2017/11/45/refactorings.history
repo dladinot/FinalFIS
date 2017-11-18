@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;api.I&apos; to &apos;CRUD&apos;&#x0D;&#x0A;- Original project: &apos;api&apos;&#x0D;&#x0A;- Original element: &apos;api.I&apos;&#x0D;&#x0A;- Renamed element: &apos;api.CRUD&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;I&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;api{I.java[I" matchStrategy="1" name="CRUD" qualified="false" references="true" similarDeclarations="false" stamp="1509574465277" textual="false" version="1.0"/>
+</session>
