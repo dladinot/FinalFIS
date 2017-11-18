@@ -133,7 +133,7 @@ public class GuiFachada extends JFrame{
 		JButton btnSalir = new JButton("Salir");
 		btnSalir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null,"Saliendo...");	
+				new GuiLogin().ventana();
 				dispose();
 			}
 		});
@@ -149,7 +149,7 @@ public class GuiFachada extends JFrame{
 		}if (horasMonitoria == null){
 			btnMonitoria.setEnabled(false);
 		}	
-		
+		this.setLocationRelativeTo(null);
 		this.setVisible(true);
 		
 	}

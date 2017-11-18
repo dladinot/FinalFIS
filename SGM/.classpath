@@ -4,5 +4,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="complementos/api.jar"/>
 	<classpathentry kind="lib" path="complementos/utilidades.jar" sourcepath="/utilitarios"/>
+	<classpathentry kind="lib" path="E:/Documentos/UDISTRITAL/SEMESTRE 7/FIS/FINAL FIS/workspace/SGM/complementos/sqlite-jdbc-3.7.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

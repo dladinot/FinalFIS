@@ -5,6 +5,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -16,6 +17,8 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.EmptyBorder;
 
+import com.logica.Autenticacion;
+
 import api.IMonitoria;
 
 public class GuiLogin extends JFrame {
@@ -26,7 +29,7 @@ public class GuiLogin extends JFrame {
 	
 	public void ventana() {
 		
-	
+
 		setTitle("Inicio");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 581, 324);
@@ -34,42 +37,48 @@ public class GuiLogin extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JLabel banner = new JLabel("Sistema de Gestion de Monitorias");
+	
+		ImageIcon icono = new ImageIcon("img\\logoSGM.png");
+		JLabel banner = new JLabel("");
+		banner.setIcon(icono);
 		banner.setFont(new Font("Tahoma", Font.BOLD, 17));
-		banner.setBounds(140, 41, 295, 21);
+		banner.setBounds(69, 25, 437, 86);
 		contentPane.add(banner);
 		
 		JButton btnIngresar = new JButton("Ingresar");
 		btnIngresar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new GuiFachada().ventana();
-				dispose();
+				Autenticacion token=new Autenticacion();
+				if(token.iniciarSesion(textField.getText(), passwordField.getText())) {
+					new GuiFachada().ventana();
+					dispose();
+				}
 
 			}
 		});
-		btnIngresar.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnIngresar.setBounds(197, 180, 203, 23);
+		btnIngresar.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnIngresar.setBounds(209, 205, 203, 23);
 		contentPane.add(btnIngresar);
 		
 		JLabel lblUsuario = new JLabel("Usuario:");
-		lblUsuario.setBounds(140, 96, 73, 14);
+		lblUsuario.setBounds(114, 125, 73, 14);
 		contentPane.add(lblUsuario);
 		
 		JLabel lblContrasena = new JLabel("Contrasena:");
-		lblContrasena.setBounds(140, 121, 73, 14);
+		lblContrasena.setBounds(114, 150, 73, 14);
 		contentPane.add(lblContrasena);
 		
 		textField = new JTextField();
-		textField.setBounds(223, 93, 212, 20);
+		textField.setBounds(197, 122, 212, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		passwordField = new JPasswordField();
-		passwordField.setBounds(223, 121, 212, 20);
+		passwordField.setBounds(197, 149, 212, 20);
 		contentPane.add(passwordField);
-		
+		this.setLocationRelativeTo(null);
 		this.setVisible(true);
+		
 		
 	}
 	
