@@ -1,9 +1,9 @@
 package api;
 
 public interface BaseDatos {
-	void conectar();
-	void guardar(Object obj);
-	Object consultar();
+	void conectar(String direccion);
+	void guardar(String comandoSQL);
+	Object consultar(String comandoSQL);
 	void desconectar();
    
 }

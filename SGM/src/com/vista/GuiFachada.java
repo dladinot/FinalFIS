@@ -27,8 +27,12 @@ public class GuiFachada extends JFrame{
 	private IMonitoria contactos;
 	private IMonitoria perfil;
 	private IMonitoria horasMonitoria;
+	private String codigo;
 	
-	public GuiFachada() {
+	public GuiFachada(String codigo) {
+		
+		this.codigo=codigo;
+		
 		Cargador c = new Cargador("Componentes", ClassLoader.getSystemClassLoader());
 		try {
 			Class<?> cl = c.cargarComponente(IMonitoria.class.getName());
@@ -95,7 +99,7 @@ public class GuiFachada extends JFrame{
 		JButton btnMonitoria = new JButton("Monitoria");
 		btnMonitoria.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				horasMonitoria.administrarMonitoria();
+				horasMonitoria.administrarMonitoria(codigo);
 			}
 		});
 		btnMonitoria.setBounds(239, 93, 89, 23);
@@ -104,7 +108,7 @@ public class GuiFachada extends JFrame{
 		JButton btnIrAClasificados = new JButton("Clasificados");
 		btnIrAClasificados.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				clasificado.administrarMonitoria();
+				clasificado.administrarMonitoria(codigo);
 			}
 		});
 		btnIrAClasificados.setBounds(239, 161, 89, 23);
@@ -114,7 +118,7 @@ public class GuiFachada extends JFrame{
 		btnVerPerfil.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 		
-				perfil.administrarMonitoria();
+				perfil.administrarMonitoria(codigo);
 			}
 		});
 		btnVerPerfil.setBounds(239, 127, 89, 23);
@@ -123,7 +127,7 @@ public class GuiFachada extends JFrame{
 		JButton btnContactarUsuario = new JButton("Contactar usuario");
 		btnContactarUsuario.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				contactos.administrarMonitoria();
+				contactos.administrarMonitoria(codigo);
 			
 			}
 		});

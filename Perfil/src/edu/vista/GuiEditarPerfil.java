@@ -3,7 +3,6 @@ package edu.vista;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
 import javax.swing.border.EmptyBorder;
 
 import api.IMonitoria;
@@ -13,14 +12,13 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 import java.awt.Font;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JTextField;
 import javax.swing.JButton;
 
-public class GuiPerfil extends JFrame implements IMonitoria{
+public class GuiEditarPerfil extends JFrame implements IMonitoria{
 	private String codigo;
 	private Perfil perfil;
 	private JPanel contentPane;
@@ -32,7 +30,7 @@ public class GuiPerfil extends JFrame implements IMonitoria{
 	private JTextField txtTel;
 	private JTextField txtRol;
 	
-	public GuiPerfil() {
+	public GuiEditarPerfil() {
 		
 	}
 	
@@ -40,7 +38,7 @@ public class GuiPerfil extends JFrame implements IMonitoria{
 		this.codigo=codigo;
 		perfil=new Perfil(this.codigo);
 		
-		setTitle("Perfil");
+		setTitle("Editar Perfil");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 572, 321);
 		contentPane = new JPanel();
@@ -90,14 +88,14 @@ public class GuiPerfil extends JFrame implements IMonitoria{
 		contentPane.add(lblRol);
 		
 		txtNombre = new JTextField();
-		txtNombre.setEditable(false);
+		txtNombre.setEditable(true);
 		txtNombre.setBounds(254, 41, 249, 20);
 		txtNombre.setText(perfil.getNombre());
 		contentPane.add(txtNombre);
 		txtNombre.setColumns(10);
 		
 		txtApellido = new JTextField();
-		txtApellido.setEditable(false);
+		txtApellido.setEditable(true);
 		txtApellido.setColumns(10);
 		txtApellido.setBounds(254, 65, 249, 20);
 		txtApellido.setText(perfil.getApellido());
@@ -111,21 +109,21 @@ public class GuiPerfil extends JFrame implements IMonitoria{
 		contentPane.add(txtCodigo);
 		
 		txtCedula = new JTextField();
-		txtCedula.setEditable(false);
+		txtCedula.setEditable(true);
 		txtCedula.setColumns(10);
 		txtCedula.setBounds(254, 115, 249, 20);
 		txtCedula.setText(perfil.getCedula());
 		contentPane.add(txtCedula);
 		
 		txtCorreo = new JTextField();
-		txtCorreo.setEditable(false);
+		txtCorreo.setEditable(true);
 		txtCorreo.setColumns(10);
 		txtCorreo.setBounds(254, 140, 249, 20);
 		txtCorreo.setText(perfil.getCorreo());
 		contentPane.add(txtCorreo);
 		
 		txtTel = new JTextField();
-		txtTel.setEditable(false);
+		txtTel.setEditable(true);
 		txtTel.setColumns(10);
 		txtTel.setBounds(254, 165, 249, 20);
 		txtTel.setText(perfil.getTelefono());
@@ -138,37 +136,22 @@ public class GuiPerfil extends JFrame implements IMonitoria{
 		txtRol.setText(perfil.getRol());
 		contentPane.add(txtRol);
 		
-		JButton btnEditarPerfil = new JButton("Editar Perfil");
-		btnEditarPerfil.addActionListener(new ActionListener() {
+		JButton btnGuardarCambios = new JButton("Guardar Cambios");
+		btnGuardarCambios.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new GuiEditarPerfil().administrarMonitoria(codigo);
+				perfil.actualizarPerfil(txtNombre.getText(), txtApellido.getText(), txtCedula.getText(), txtCorreo.getText(), txtTel.getText());
+				JOptionPane.showMessageDialog(null, "Cambios realizados correctamente");
+				new GuiPerfil().administrarMonitoria(codigo);
 				dispose();
 			}
 		});
-		btnEditarPerfil.setBounds(254, 231, 89, 23);
-		contentPane.add(btnEditarPerfil);
-		
-		JButton btnCambiarContrasea = new JButton("Cambiar contrase\u00F1a");
-		btnCambiarContrasea.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JLabel messageLabel = new JLabel("Ingrese su nueva contraseña");
-			    JPasswordField messagePassword = new JPasswordField();
-			    JPanel messagePanel = new JPanel(new GridLayout(0,1));
-			    messagePanel.add(messageLabel);
-			    messagePanel.add(messagePassword);
-			    String title = "Cambio de contraseña";
-			    JOptionPane.showMessageDialog(null, messagePanel, title, JOptionPane.PLAIN_MESSAGE);
-			    String pw = new String(messagePassword.getPassword());
-			    perfil.cambiarContrasena(pw);
-			    JOptionPane.showMessageDialog(null, "Cambio realizado correctamente");
-			}
-		});
-		btnCambiarContrasea.setBounds(374, 231, 129, 23);
-		contentPane.add(btnCambiarContrasea);
+		btnGuardarCambios.setBounds(310, 231, 115, 23);
+		contentPane.add(btnGuardarCambios);
 		
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new GuiPerfil().administrarMonitoria(codigo);
 				dispose();
 			}
 		});

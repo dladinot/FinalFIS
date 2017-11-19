@@ -17,9 +17,10 @@ import api.IMonitoria;
 
 public class GuiContactos extends JFrame implements IMonitoria{
 	private JPanel contentPane;
-
+	private String codigo;
 	@Override
-	public void administrarMonitoria() {
+	public void administrarMonitoria(String codigo) {
+		this.codigo=codigo;
 		setTitle("Contactos");
 		setBounds(100, 100, 454, 234);
 		contentPane = new JPanel();

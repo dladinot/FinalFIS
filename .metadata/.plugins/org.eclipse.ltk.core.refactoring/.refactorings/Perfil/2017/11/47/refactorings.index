@@ -1,2 +1,8 @@
 1510850357028	Move compilation unit
 1510850362750	Move file
+1511114723981	Rename type 'BD'
+1511119460697	Delete element
+1511119479936	Rename type 'GUI'
+1511119682694	Rename local variable 'btnNewButton'
+1511126108013	Copy compilation unit
+1511126306107	Rename local variable 'btnEditarPerfil'

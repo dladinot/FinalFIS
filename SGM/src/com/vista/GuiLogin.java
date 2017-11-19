@@ -29,7 +29,6 @@ public class GuiLogin extends JFrame {
 	
 	public void ventana() {
 		
-
 		setTitle("Inicio");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 581, 324);
@@ -50,7 +49,7 @@ public class GuiLogin extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Autenticacion token=new Autenticacion();
 				if(token.iniciarSesion(textField.getText(), passwordField.getText())) {
-					new GuiFachada().ventana();
+					new GuiFachada(textField.getText()).ventana();
 					dispose();
 				}
 

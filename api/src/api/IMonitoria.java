@@ -1,5 +1,5 @@
 package api;
 
 public interface IMonitoria {
-	void administrarMonitoria();
+	void administrarMonitoria(String codigo);
 }

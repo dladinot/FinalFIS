@@ -34,6 +34,13 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item value="528" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="696" key="DIALOG_HEIGHT"/>
+		<item value="704" key="DIALOG_X_ORIGIN"/>
+		<item value="64" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
@@ -61,6 +68,14 @@
 		<item value="398" key="DIALOG_HEIGHT"/>
 		<item value="112" key="DIALOG_X_ORIGIN"/>
 		<item value="13" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item value="false" key="SynchronizedModifier"/>
+		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="FinalModifier"/>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="0" key="index"/>
@@ -95,18 +110,19 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="SGM\componentes\edu.com.perfil.jar"/>
 			<item value="SGM/componentes/edu.com.perfil.jar"/>
 			<item value="SGM/componentes/edu.com.horasMonitoria.jar"/>
 			<item value="SGM/componentes/edu.com.contactos.jar"/>
-			<item value="SGM/complementos/api.jar"/>
-			<item value="SGM\componentes\edu.com.clasificados.jar"/>
 			<item value="SGM/componentes/edu.com.clasificados.jar"/>
+			<item value="SGM/complementos/api.jar"/>
+			<item value="SGM\complementos\api.jar"/>
+			<item value="SGM\componentes\edu.com.clasificados.jar"/>
 			<item value="SGM\componentes\edu.clienteservidor.contactos.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.contactos.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.perfil.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.clasificados.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.horasMonitoria.jar"/>
-			<item value="SGM\complementos\api.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.login.jar"/>
 			<item value="login/componentes/edu.clienteservidor.fachada.jar"/>
 			<item value="fachada/componentes/edu.clienteservidor.perfil.jar"/>
@@ -115,6 +131,10 @@
 			<item value="SGM\componentes\ed.clienteservidor.datos.jar"/>
 			<item value="SGM/componentes/ed.clienteservidor.datos.jar"/>
 		</list>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item value="false" key="SortOrdering"/>
+		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>

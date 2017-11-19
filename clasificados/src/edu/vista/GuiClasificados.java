@@ -16,9 +16,11 @@ import api.IMonitoria;
 public class GuiClasificados extends JFrame implements IMonitoria{
 
 	private JPanel contentPane;
+	private String codigo;
 
 	@Override
-	public void administrarMonitoria() {
+	public void administrarMonitoria(String codigo) {
+		this.codigo=codigo;
 		setTitle("Clasificados");
 		setBounds(100, 100, 559, 372);
 		contentPane = new JPanel();
