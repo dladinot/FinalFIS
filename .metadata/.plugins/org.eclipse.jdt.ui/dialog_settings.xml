@@ -9,6 +9,16 @@
 		<item value="false" key="updateTextualMatches"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 	</section>
+	<section name="ProblemSeveritiesConfigurationBlock">
+		<item value="false" key="expanded2"/>
+		<item value="true" key="expanded1"/>
+		<item value="false" key="expanded4"/>
+		<item value="false" key="expanded3"/>
+		<item value="false" key="expanded6"/>
+		<item value="false" key="expanded5"/>
+		<item value="false" key="expanded7"/>
+		<item value="false" key="expanded0"/>
+	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="1" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -34,11 +44,17 @@
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
 	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item value="true" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE"/>
+		<item value="320" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT"/>
+		<item value="400" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH"/>
+		<item value="false" key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION"/>
+	</section>
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="528" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="696" key="DIALOG_HEIGHT"/>
-		<item value="704" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_X_ORIGIN"/>
 		<item value="64" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="RefactoringWizard.preview">
@@ -92,7 +108,7 @@
 	</section>
 	<section name="JarPackageWizard">
 		<item value="false" key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES"/>
-		<item value="/Perfil/src/MANIFEST.MF" key="JarManifestWizardPage.MANIFEST_LOCATION"/>
+		<item value="/contactos/src/MANIFEST.MF" key="JarManifestWizardPage.MANIFEST_LOCATION"/>
 		<item value="false" key="JarManifestWizardPage.SEAL_JAR"/>
 		<item value="true" key="JarPackageWizardPage.COMPRESS"/>
 		<item value="false" key="JarManifestWizardPage.REUSE_MANIFEST"/>
@@ -110,10 +126,11 @@
 		<item value="false" key="JarManifestWizardPage.SAVE_MANIFEST"/>
 		<item value="false" key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="SGM\componentes\edu.com.contactos.jar"/>
+			<item value="SGM/componentes/edu.com.contactos.jar"/>
 			<item value="SGM\componentes\edu.com.perfil.jar"/>
 			<item value="SGM/componentes/edu.com.perfil.jar"/>
 			<item value="SGM/componentes/edu.com.horasMonitoria.jar"/>
-			<item value="SGM/componentes/edu.com.contactos.jar"/>
 			<item value="SGM/componentes/edu.com.clasificados.jar"/>
 			<item value="SGM/complementos/api.jar"/>
 			<item value="SGM\complementos\api.jar"/>
@@ -129,7 +146,6 @@
 			<item value="SGM/componentes/edu.clienteservidor.fachada.jar"/>
 			<item value="SGM/componentes/edu.clienteservidor.principal.jar"/>
 			<item value="SGM\componentes\ed.clienteservidor.datos.jar"/>
-			<item value="SGM/componentes/ed.clienteservidor.datos.jar"/>
 		</list>
 	</section>
 	<section name="AddGetterSetterDialog">

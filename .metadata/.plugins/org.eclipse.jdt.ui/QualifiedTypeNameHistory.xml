@@ -38,4 +38,15 @@
 <fullyQualifiedTypeName name="java.awt.GridLayout"/>
 <fullyQualifiedTypeName name="edu.vista.GuiPerfil"/>
 <fullyQualifiedTypeName name="edu.vista.GuiEditarPerfil"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="edu.persistencia.ProxyBD"/>
+<fullyQualifiedTypeName name="edu.logica.Usuario"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="edu.vista.GuiContactosAdmin"/>
+<fullyQualifiedTypeName name="edu.vista.GuiContactosDocente"/>
+<fullyQualifiedTypeName name="edu.vista.GuiContactosMonitor"/>
+<fullyQualifiedTypeName name="edu.logica.Contacto"/>
+<fullyQualifiedTypeName name="edu.vista.GuiInfoContacto"/>
+<fullyQualifiedTypeName name="edu.vista.GuiContactos"/>
 </qualifiedTypeNameHistroy>
